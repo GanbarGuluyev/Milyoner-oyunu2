@@ -18,18 +18,26 @@
             string telefonJoker2 = Console.ReadLine();
             Console.Write("3.Telefon Jokerinizi Giriniz: ");
             string telefonJoker3 = Console.ReadLine();
-
+            Console.WriteLine();
+            Console.WriteLine("Telefon Jokerleriniz: " + "1:" + telefonJoker1 + ", " + "2:" + telefonJoker2 + ", " + "3:" + telefonJoker3);
+            Console.ReadLine();
             Console.Clear();
-            Console.WriteLine("Hoşgeldiniz " + isim + " " + soyisim);
 
+            
+            Console.WriteLine("Hoşgeldiniz " + isim + " " + soyisim);
+            Console.WriteLine();
             Console.Write("Kuralları Biliyor Musunuz? : ");
             char kuralCevap = char.Parse(Console.ReadLine().ToUpper());
+            Console.Clear();
 
             if (kuralCevap != 'E')
             {
                 // TODO: Kurallar eklenecek.
                 Console.WriteLine("Kurallar: asdfasdaads");
             }
+            Console.WriteLine("\nKuralları Öğrendiğinizi Düşünüyorsanız 'ENTER' Tuşuna Basın.");
+            Console.ReadKey();
+            Console.Clear();
 
             Console.Write("Hazır Mısınız? : ");
             char hazirCevap = char.Parse(Console.ReadLine().ToUpper());
@@ -37,8 +45,8 @@
 
             if (hazirCevap != 'E')
             {
-                Console.WriteLine("Hazır olmananız bekleniyor.");
-                Console.WriteLine("Hazır olduğunuzda Enter'a Basın");
+                Console.WriteLine("Hazır Olmananız Bekleniyor...");
+                Console.WriteLine("Hazır Olduğunuzda 'ENTER' Tuşuna Basın");
                 Console.ReadLine();
             }
 
@@ -142,13 +150,13 @@
             else if (secim == 'R')
             {
                 Console.WriteLine(kasa + " TL Kazanacaksınız.");
-                Console.Write("Çekilmek İstediğinize Emin Misiniz? : ");
+                Console.Write("\nÇekilmek İstediğinize Emin Misiniz? : ");
                 char cekilCevap = char.Parse(Console.ReadLine());
 
                 if (cekilCevap == 'E')
                 {
-                    Console.WriteLine("Tebrikler, " + kasa + " TL Kazandınız.");
-                    Console.WriteLine("Oyun Bitti");
+                    Console.WriteLine("\nTebrikler, " + kasa + " TL Kazandınız.");
+                    Console.WriteLine("\nOyun Bitti");
                     //return;
                     Environment.Exit(0);
                 }
@@ -157,14 +165,14 @@
 
             else if (secim != cevap)
             {
-                Console.WriteLine("Elendiniz, Kazandığınız Tutar: " + baraj + " TL");
-                Console.WriteLine("Oyun Bitti");
+                Console.WriteLine("\nElendiniz, Kazandığınız Tutar: " + baraj + " TL");
+                Console.WriteLine("\nOyun Bitti");
                 //return;
                 Environment.Exit(0);
             }
             kasa = odul;
-            Console.WriteLine("Tebrikler, Kazandığınız Tutar: " + kasa + " TL");
-            Console.WriteLine("\nSonraki Soruya Geçmek  İçin Enter'a Basın..");
+            Console.WriteLine("\nTebrikler, Kazandığınız Tutar: " + kasa + " TL");
+            Console.WriteLine("\nSonraki Soruya Geçmek  İçin 'ENTER' Tuşuna Basın..");
             Console.ReadLine();
             #endregion
 
