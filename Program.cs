@@ -4,13 +4,12 @@
     {
         static void Main(string[] args)
         {
-            #region Kim Milyoner Olmak İster - V1
+        #region Kim Milyoner Olmak İster - V1
             Console.WriteLine("Kim Milyoner Olmak İster\n");
             Console.Write("İsim Giriniz: ");
             string isim = Console.ReadLine();
             Console.Write("Soyisim Giriniz: ");
             string soyisim = Console.ReadLine();
-
 
             Console.Write("\n1.Telefon Jokerinizi Giriniz: ");
             string telefonJoker1 = Console.ReadLine();
@@ -22,10 +21,10 @@
             Console.WriteLine("Telefon Jokerleriniz: " + "1:" + telefonJoker1 + ", " + "2:" + telefonJoker2 + ", " + "3:" + telefonJoker3);
             Console.ReadLine();
             Console.Clear();
-
             
             Console.WriteLine("Hoşgeldiniz " + isim + " " + soyisim);
             Console.WriteLine();
+
             Console.Write("Kuralları Biliyor Musunuz? : ");
             char kuralCevap = char.Parse(Console.ReadLine().ToUpper());
             Console.Clear();
@@ -41,7 +40,6 @@
 
             Console.Write("Hazır Mısınız? : ");
             char hazirCevap = char.Parse(Console.ReadLine().ToUpper());
-
 
             if (hazirCevap != 'E')
             {
@@ -59,7 +57,7 @@
             string soru, a, b, c, d;
             char cevap;
 
-            #region Soru Bilgileri
+        #region Soru Bilgileri
             soruNo = 1;
             soru = "Türkiyenin Başkenti Neresidir?";
             a = "Ankara";
@@ -78,6 +76,7 @@
             gizleA = false; gizleB = false;
             gizleC = false; gizleD = false;
         #endregion
+
         #region Soru Kalıbı
         soruNoktasi:
             Console.Clear();
@@ -174,11 +173,9 @@
             Console.WriteLine("\nTebrikler, Kazandığınız Tutar: " + kasa + " TL");
             Console.WriteLine("\nSonraki Soruya Geçmek  İçin 'ENTER' Tuşuna Basın..");
             Console.ReadLine();
-            #endregion
+        #endregion
 
-
-            #endregion
-
+        #endregion
         }
     }
 }
